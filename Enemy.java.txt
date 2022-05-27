@@ -1,0 +1,2 @@
+// Enemy class txt.
+public class Enemy{}
