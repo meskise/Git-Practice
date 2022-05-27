@@ -1,2 +1,10 @@
 // This is the player one file.
 public class PlayerOne{}
+
+public void act()
+{
+     if(Greenfoot.isKeyDown("w"))
+	{
+	     setLocation(getX(), getY(), - 5);
+	}
+}
