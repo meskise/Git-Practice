@@ -3,8 +3,25 @@ public class PlayerOne{}
 
 public void act()
 {
+     movementControls();
+}
+
+public void movementControls()
+{
      if(Greenfoot.isKeyDown("w"))
 	{
 	     setLocation(getX(), getY(), - 5);
+	}
+     if(Greenfoot.isKeyDown("a"))
+	{
+	     setLocation(getX(), - 5, getY());
+	}
+     if(Greenfoot.isKeyDown("s"))
+	{
+	     setLocation(getX(), getY(), + 5);
+	}
+     if(Greenfoot.isKeyDown("w"))
+	{
+	     setLocation(getX(), + 5, getY());
 	}
 }
