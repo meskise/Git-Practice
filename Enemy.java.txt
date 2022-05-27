@@ -1,2 +1,31 @@
 // Enemy class txt.
 public class Enemy{}
+
+int counter = 0;
+boolean isFacingRight = false;
+int deltaX;
+int deltaY;
+
+public void act()
+{
+     movement();
+}
+
+public void movement()
+{
+    counter++;
+    if (counter < 20000)
+	{
+	     isFacingRight = false;
+	     deltaX = - 3;
+	}
+     else if (counter > 20000)
+	{
+	     isFacingRight = true;
+	     deltaX = + 3;
+	}
+     else if (counter > 40000)
+	{
+	     counter = 0;
+	}
+}
